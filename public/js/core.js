@@ -10,3 +10,7 @@ state.textContent = 'A double threat with a sales and account management backgro
 
 let invite = document.getElementById('invite');
 invite.textContent = 'Want to chat? I know a few good coffee shops!';
+
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});

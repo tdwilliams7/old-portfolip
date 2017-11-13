@@ -5,6 +5,9 @@ body {
     text-align: center;
     background-repeat: no-repeat;
 }
+nav {
+    background-color: lightgrey;
+}
 
 ul {
     list-style-type: none;
