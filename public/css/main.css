@@ -11,6 +11,7 @@ nav {
 
 ul {
     list-style-type: none;
+    text-align: center
 }
 
 ul img {
@@ -33,7 +34,8 @@ img {
 }
 
 #bottomRow {
-    background: linear-gradient(-45deg, rgba(55, 230, 235, 1) 65%, rgba(255, 255, 255, 0) 0%)
+    background: linear-gradient(-45deg, rgba(55, 230, 235, 1) 65%, rgba(255, 255, 255, 0) 0%);
+    padding-top: 60px;
 }
 
 #intro {
@@ -62,4 +64,7 @@ img {
 }
 .modalPic:hover {
     cursor: pointer;
+}
+li.active a{
+    color: rgb(255,140,0) !important;
 }

@@ -14,3 +14,20 @@ invite.textContent = 'Want to chat? I know a few good coffee shops!';
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+$('ul').delegate('li', 'click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+});
+
+$(window).scroll(function() {
+    var position = $(this).scrollTop();
+
+    $('.section').each(function() {
+        var target = $(this).offset().top;
+        var id = $(this).attr('id');
+
+        if (position >= target) {
+            $('#nav > div > ul > li > a[href=#' + id + ']').addClass('active');
+        }
+    });
+});
