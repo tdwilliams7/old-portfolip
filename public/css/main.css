@@ -1,41 +1,41 @@
-#profile {
-    border-radius: 50%;
-    max-width: 200px;
-    margin: 1%;
+body {
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px .5px #B1A9B7;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 60%, rgba(255,140,0, 1) 0%);
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul img {
+    width: 30px
 }
 
 img {
     max-width: 100%;
     padding: 1%;
 }
+
+#profile {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 1%;
+}
+
 #topRow {
     padding-bottom: .5%;
 }
-body {
-    font-family: 'Courgette', cursive;
-    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 60%, rgba(255,140,0, 1) 0%);
-    text-align: center;
-    background-repeat: no-repeat;
-}
+
 #bottomRow {
     background: linear-gradient(-45deg, rgba(55, 230, 235, 1) 65%, rgba(255, 255, 255, 0) 0%)
 }
-ul {
-    list-style-type: none;
-}
-ul img {
-    width: 30px
-}
+
 #intro {
     font-size: 35px;
     padding-bottom: 1%
-}
-.projText {
-    font-size: 25px;
-    display : flex;
-    justify-content: center;
-    align-items: center;
-
 }
 #resumePic {
     max-width: 75%;
@@ -49,4 +49,14 @@ ul img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.projText {
+    font-size: 25px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modalPic:hover {
+    cursor: pointer;
 }
