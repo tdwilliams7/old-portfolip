@@ -1,0 +1,28 @@
+#profile {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 1%;
+}
+
+
+
+img {
+    max-width: 100%;
+    padding: 1%;
+}
+.row {
+    padding-bottom: 3%
+}
+body {
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 60%, rgba(255,140,0, 1) 0%);
+    text-align: center;
+}
+#bottomRow {
+    background: linear-gradient(-45deg, rgba(55, 230, 235, 1) 65%, rgba(255, 255, 255, 0.5) 0%)
+}
+ul {
+    list-style-type: none;
+}
+ul img {
+    width: 30px
+}

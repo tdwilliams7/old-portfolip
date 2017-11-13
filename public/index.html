@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Troy Williams</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">TDW</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0 w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id='topRow'>
+    <div class="row">
+        <div class="col-md-3"><img src='assets/profilepic.jpg' class="img-fluid" id='profile'></div>
+        <div class="col-md-3"><!--space --></div>
+        <div class="col-md-5" id='intro'>Intro</div>
+        <div class="col-md-1"><!-- spacing --></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"><a name='resume'></a></div>
+        <div class="col-md-4"><img src="assets/resumepic.png" data-toggle='modal' data-target='#resumeModal' id='resumePic'></div>
+        <div class="col-md-4"> <!-- spacing --> </div>
+        <div class="col-md-3"> Add some skills here</div>
+    </div>
+    </section>
+    <section id='bottomRow'>
+    <div class="row">
+        <div class="col-md-4"> <!-- spacing --> </div>
+        <div class="col-md-4"> <!-- spacing --> </div>
+        <div class="col-md-4" ><a name="projects"><h3>Projects</h3><img src='assets/momentumClone.png' data-toggle='modal' data-target='#momentumModal'><p>A pretty homepage</p></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"> <!-- spacing --></div>
+        <div class="col-md-4">
+            <img src="assets/grocListPic.png" data-toggle='modal' data-target='#grocModal'>
+            <p>Grocery spending tracker</p>
+        </div>
+        <div class="col-md-4"> <!-- spacing --></div>
+    </div>
+    <div class="row">
+        <a name="contact"></a>
+        <div class="col-md-4"><img src="assets/sEats.png" data-toggle='modal' data-target='#sEatsModal'>
+            <p>Some good food recipes</p>
+        </div>
+        <div class="col-md-4"> <!-- spacing --> </div>
+        <div class="col-md-4">
+            <h3>Contact info</h3>
+            <ul>
+                <li>(507) 469 - 9316</li>
+                <li>troydonwilliams@gmail.com</li>
+                <li><a href="https://github.com/tdwilliams7" target='_blank'><img src="assets/GitHub-Mark-64px.png"></a><a href="https://www.linkedin.com/in/troy-williams-2a589486/"><img src="assets/linkedin.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <footer></footer>
+    <div class='modal fade' id='resumeModal' tabindex="-1" role='dialog' aria-labelledby='myResumeModal' aria-hidden='true'>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="assets/resumepic.png">
+                </div>
+                <div class="modal-footer">
+                    <button type='button' class="btn btn-default" data-dismiss='modal'>Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='modal fade' id='momentumModal' tabindex="-1" role='dialog' aria-labelledby='momentumModal' aria-hidden='true'>
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="assets/momentumClone.png">
+                    Heavily inspired by the Momentum Chrome extension except adds a grocery list and Spotify playlist. Made with Bootstrap, AngularJS, Heroku, and Ajax and Dark Sky for the weather. Grocery list pulls from the Grocery List app.
+                    <a href="https://mighty-scrubland-21866.herokuapp.com/" target='_blank'>Link (might take a minute to load)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id='grocModal' tabindex="-1" role='dialog' aria-labelledby='grocModal' aria-hidden='true'>
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="assets/grocListPic.png">
+                    Crud app to help track grocery spending. Make with Bootstrap, AngularJS, NodeJS, Express, Mongoose, deployed on Heroku, and a hosted database provider.
+                    <a href="https://intense-castle-22597.herokuapp.com/">Link (might take a minute to load)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id='sEatsModal' tabindex="-1" role='dialog' aria-labelledby='sEatsModal' aria-hidden='true'>
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="assets/sEats.png">
+                    Clone of SeriousEat.com. Made with React, bootstrap, and good old fashioned CSS.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src='js/core.js'></script>
+</body>
+</html>
